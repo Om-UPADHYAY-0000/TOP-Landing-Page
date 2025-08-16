@@ -6,14 +6,35 @@ body {
   margin: 0;
   padding: 0;
 }
-.first-section {
-  background-color: #1F2937;
-  margin: 0;
-  padding: 20px;
-}
+      .first-section {
+        background: linear-gradient(rgba(31, 41, 55, 0.85), rgba(31, 41, 55, 0.85)), url('https://i.pinimg.com/564x/d4/0d/5d/d40d5d3762bccc027e63eb186dfe7ab3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 20px;
+        position: relative;
+        min-height: 100vh;
+      }
+      .first-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(31, 41, 55, 0.3);
+        z-index: 1;
+      }
+      .first-section > * {
+        position: relative;
+        z-index: 2;
+      }
 #header-logo {
-  color: #F9FAF8;
-  font-size: 24px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 45px;
   font-weight: bold;
 }
 a {
